@@ -16,5 +16,20 @@ namespace _04__Задание___4
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            textBox1.Visible = false;
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            textBox1.Visible = true;
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            textBox1.Clear();
+        }
     }
 }
