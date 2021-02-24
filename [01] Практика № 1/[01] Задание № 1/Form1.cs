@@ -16,5 +16,25 @@ namespace _01__Задание___1
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.BackColor = Color.Red;
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.BackColor = Color.Green;
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            this.BackColor = Color.Blue;
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            this.BackColor = Color.Yellow;
+        }
     }
 }
