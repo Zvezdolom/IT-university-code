@@ -16,5 +16,17 @@ namespace _12__Задание___12
         {
             InitializeComponent();
         }
+
+        private void Form1_Click(object sender, EventArgs e)
+        {
+            this.BackColor = Color.AntiqueWhite;
+            textBox1.Clear();
+            label1.Text = "Начало работы";
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            label1.Text = textBox1.Text;
+        }
     }
 }
