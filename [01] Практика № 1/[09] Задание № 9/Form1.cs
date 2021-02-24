@@ -16,5 +16,27 @@ namespace _09__Задание___9
         {
             InitializeComponent();
         }
+
+        private void Form1_Click(object sender, EventArgs e)
+        {
+            button1.Enabled = true;
+            button2.Enabled = true;
+            button3.Enabled = true;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            button2.Enabled = false;
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            button3.Enabled = false;
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            button1.Enabled = false;
+        }
     }
 }
