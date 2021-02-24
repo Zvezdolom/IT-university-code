@@ -16,5 +16,27 @@ namespace _11__Задание___11
         {
             InitializeComponent();
         }
+
+        private void Form1_Resize(object sender, EventArgs e)
+        {
+            textBox1.Clear();
+            textBox2.Clear();
+            textBox3.Clear();
+        }
+
+        private void textBox1_MouseClick(object sender, MouseEventArgs e)
+        {
+            textBox1.Text = "Первый";
+        }
+
+        private void textBox2_MouseClick(object sender, MouseEventArgs e)
+        {
+            textBox2.Text = "Второй";
+        }
+
+        private void textBox3_MouseClick(object sender, MouseEventArgs e)
+        {
+            textBox3.Text = "Третий";
+        }
     }
 }
