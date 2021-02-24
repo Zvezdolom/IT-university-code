@@ -16,5 +16,36 @@ namespace _07__Задание___7
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            label1.Visible = false;
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            label2.Visible = false;
+            label4.Visible = false;
+
+            label1.Visible = true;
+            label3.Visible = true;
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            label2.Visible = false;
+            label3.Visible = false;
+
+            label1.Visible = true;
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            label1.Visible = false;
+            label4.Visible = false;
+
+            label2.Visible = true;
+            label3.Visible = true;
+        }
     }
 }
