@@ -16,5 +16,64 @@ namespace _08__Задание___8
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            int index = listBox1.SelectedIndex;
+            if (index == -1)
+            {
+                MessageBox.Show("Please select the line", "Error");
+                return;
+            }
+            string str = listBox1.Items[index].ToString();
+
+            int open = 0;
+            int close = 0;
+            label1.Text = "";
+
+            for (int i = 0; i < str.Length; i++)
+            {
+                if (str[i] == '(')
+                {
+                    open++;
+                }
+
+                if (str[i] == ')')
+                {
+                    close++;
+                }
+            }
+
+            if (open == close)
+            {
+                label1.Text = "Результат: Правильно";
+            }
+                
+            if (open != close)
+            {
+                label1.Text = "Результат: Неправильно";
+            }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if (String.IsNullOrEmpty(textBox1.Text))
+            {
+                MessageBox.Show("Textbox is empty", "Error");
+                return;
+            }
+            listBox1.Items.Add(textBox1.Text);
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            int index = listBox1.SelectedIndex;
+            if (index == -1)
+            {
+                MessageBox.Show("Please select the line", "Error");
+                return;
+            }
+            listBox1.Items.RemoveAt(index);
+        }
     }
 }
