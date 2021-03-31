@@ -16,5 +16,43 @@ namespace _05__Задание___5
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            int index = listBox1.SelectedIndex;
+            if (index == -1)
+            {
+                MessageBox.Show("Please select the line", "Error");
+                return;
+            }
+            string str = listBox1.Items[index].ToString();
+
+            label1.Text = "Результат: ";
+            for (int i = str.Length; i > 0; i--)
+            {
+                label1.Text += str[i - 1];
+            }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if (String.IsNullOrEmpty(textBox1.Text))
+            {
+                MessageBox.Show("Textbox is empty", "Error");
+                return;
+            }
+            listBox1.Items.Add(textBox1.Text);
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            int index = listBox1.SelectedIndex;
+            if (index == -1)
+            {
+                MessageBox.Show("Please select the line", "Error");
+                return;
+            }
+            listBox1.Items.RemoveAt(index);
+        }
     }
 }
